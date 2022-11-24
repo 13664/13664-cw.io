@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.02s linear;
+}
+body {
+  background: #faf8be;
+}
+
+ul {
+  list-style: none;
+}
+/* navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(242, 225, 225);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+#menu-btn {
+  display: none;
+  color: pink;
+  font-size: 30px;
+  padding: 1rem 2rem;
+}
+.navbar h1 {
+  color: rgb(66, 56, 36);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.navbar li a {
+  color: rgb(66, 56, 36);
+  background-color: rgb(253, 236, 249);
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+}
+.navbar li a:hover {
+  background-color: rgb(137, 114, 80);
+  color: white;
+}
+.contact-content {
+  background: #faf8be;
+}
+.contact-title {
+  margin-top: 100px;
+}
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.contact-item {
+  padding: 40px 60px;
+  background: #faf8be;
+}
+
+.contact-content h1 {
+  margin-bottom: 10px;
+}
+.contact-title p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-group {
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+}
+input {
+  width: 90%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+textarea {
+  width: 95%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+input[type="checkbox"]{
+  position: absolute;
+  width:40%;
+  padding: 10px;
+  left:0;
+  right:0;}
+.check-label{
+ padding-left: 25px;
+}
+label {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  color: rgb(214, 141, 31);
+}
+.error{
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  color:red;
+  display: none;
+}
+button {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  background: #e6a82e;
+  margin-top: 1rem;
+}
+button:hover {
+  color: #b15f07;
+  cursor: pointer;
+}
+.contact-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+/* footer0*/
+footer .container {
+  max-width: 100%;
+  margin: auto;
+  background-color: rgb(178, 150, 86);
+}
+.column-i a img{
+  width: 30px;
+ }
+footer {
+  background-color: rgb(178, 150, 86);
+  padding: 70px 0;
+  z-index: 5;
+  width: 100%;
+}
+.row {
+  display: flex;
+
+  margin-left: 250px;
+}
+.column-b,
+.column-bi,
+.column-i {
+  width: 25%;
+  padding: 0px 15px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.column-b h2,
+.column-bi h2,
+.column-i h2 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 20px;
+  line-height: 3;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+.column-b a:hover {
+  color: white;
+}
+.column-b a,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  .navbar {
+    padding: 0;
+    position: relative;
+  }
+  .logo {
+    width: 70%;
+    padding: 1rem 2rem;
+  }
+
+  #menu-btn {
+    display: inline;
+    width: 20%;
+  }
+  .nav {
+    display: block;
+    background-color: pink;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 1rem;
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: -100%;
+  }
+
+  .open-close {
+    left: 0;
+  }
+
+  .d-block {
+    display: block !important;
+  }
+
+  .navbar ul li {
+    margin: 2rem 0;
+  }
+
+  .navbar ul li a:hover {
+    background: none;
+  }
+
+  .navbar ul a {
+    color: #000;
+    background: none;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  footer .row {
+    display: block;
+    margin: 0;
+    text-align: left;
+  }
+
+  .column-b,
+  .column-bi,
+  .column-i {
+    width: 70%;
+    padding: 0px 15px;
+    text-align: left;
+  }
+  h2 {
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 1200px) {
+  .nav {
+    width: 100%;
+  }
+}
